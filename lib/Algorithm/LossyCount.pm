@@ -7,7 +7,7 @@ use Algorithm::LossyCount::Entry;
 use Carp;
 use POSIX qw//;
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 sub new {
   my ($class, %params) = @_;
@@ -118,7 +118,7 @@ Algorithm::LossyCount - Memory-efficient approximate frequency count.
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

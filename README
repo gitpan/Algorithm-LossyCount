@@ -2,7 +2,7 @@ NAME
     Algorithm::LossyCount - Memory-efficient approximate frequency count.
 
 VERSION
-    version 0.01
+    version 0.02
 
 SYNOPSIS
       use strict;
