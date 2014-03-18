@@ -2,12 +2,12 @@ package Algorithm::LossyCount;
 
 # ABSTRACT: Memory-efficient approximate frequency count.
 
-use v5.14;
+use v5.10;
 use Algorithm::LossyCount::Entry;
 use Carp;
 use POSIX qw//;
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 sub new {
   my ($class, %params) = @_;
@@ -46,7 +46,7 @@ sub add_sample {
   } else {
     $self->entries->{$sample} = Algorithm::LossyCount::Entry->new(
       num_allowed_errors => $self->current_bucket - 1,
-    )
+    );
   }
 
   ++$self->{num_samples};
@@ -118,7 +118,7 @@ Algorithm::LossyCount - Memory-efficient approximate frequency count.
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

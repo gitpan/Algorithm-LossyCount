@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-use 5.014000;
+use 5.010000;
 
 use ExtUtils::MakeMaker 6.30;
 
@@ -22,15 +22,14 @@ my %WriteMakefileArgs = (
   "NAME" => "Algorithm::LossyCount",
   "PREREQ_PM" => {
     "Carp" => 0,
-    "POSIX" => 0,
-    "Smart::Args" => 0
+    "POSIX" => 0
   },
   "TEST_REQUIRES" => {
     "List::Util" => 0,
     "Test::Exception::LessClever" => 0,
     "Test::More" => 0
   },
-  "VERSION" => "0.02",
+  "VERSION" => "0.03",
   "test" => {
     "TESTS" => "t/Algorithm/*.t"
   }
@@ -41,7 +40,6 @@ my %FallbackPrereqs = (
   "Carp" => 0,
   "List::Util" => 0,
   "POSIX" => 0,
-  "Smart::Args" => 0,
   "Test::Exception::LessClever" => 0,
   "Test::More" => 0
 );

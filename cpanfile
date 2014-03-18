@@ -1,7 +1,6 @@
 requires "Carp" => "0";
 requires "POSIX" => "0";
-requires "Smart::Args" => "0";
-requires "perl" => "v5.14.0";
+requires "perl" => "v5.10.0";
 
 on 'test' => sub {
   requires "List::Util" => "0";

@@ -1,7 +1,6 @@
 package Algorithm::LossyCount::Entry;
 
-use v5.14;
-use Smart::Args;
+use v5.10;
 
 sub new {
   my ($class, %params) = @_;
@@ -56,7 +55,7 @@ Algorithm::LossyCount::Entry
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 AUTHOR
 
